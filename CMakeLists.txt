@@ -38,12 +38,19 @@ set(SOURCE_FILES
 # Добавляем исполняемый файл
 add_executable(${PROJECT_NAME} ${SOURCE_FILES})
 
+# Пути для MySQL Connector
+#find_package(MySQL REQUIRED)
+
+
+
 # Указываем, где искать заголовочные файлы
 include_directories(${SDL2_INCLUDE_DIR})
 include_directories(${NCURSES_INCLUDE_DIR})
+include_directories(/opt/homebrew/Cellar/mysql-connector-c++/9.1.0/include)
 
 # Линкуем библиотеку SDL2
 target_link_directories(${PROJECT_NAME} PRIVATE ${SDL2_LIBRARY_DIR})
 target_link_directories(${PROJECT_NAME} PRIVATE ${NCURSES_LIBRARY_DIR})
+link_directories(/opt/homebrew/Cellar/mysql-connector-c++/9.1.0/lib)
 
-target_link_libraries(${PROJECT_NAME} SDL2 ncurses)
+target_link_libraries(${PROJECT_NAME} SDL2 ncurses mysqlcppconnx)
