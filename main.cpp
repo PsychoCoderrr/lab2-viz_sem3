@@ -734,6 +734,7 @@ int main() {
                                                     genFileChoice = (genFileChoice < genFileMenu.size() - 1) ? genFileChoice + 1 : 0;
                                                     break;
                                                 case 10: // Enter
+                                                    std::string selectedOption = genFileMenu[genFileChoice];
                                                     if (genFileChoice == genFileMenu.size() - 1) {
                                                         goto backToQuickSort;
                                                     } else {
@@ -751,7 +752,18 @@ int main() {
                                                                     if (sizeChoice == sizeMenu.size() - 1) {
                                                                         goto backToGenFileQuick;
                                                                     } else {
-                                                                        testQuickSortPages(stoi(sizeMenu[sizeChoice]));
+                                                                        int selectedSize = stoi(sizeMenu[sizeChoice]);
+                                                                        if (selectedOption == "Title") {
+                                                                            testQuickSortTitle(selectedSize); // Функция для Title
+                                                                        } else if (selectedOption == "Pages") {
+                                                                            testQuickSortPages(selectedSize); // Функция для Pages
+                                                                        } else if (selectedOption == "FName") {
+                                                                            testQuickSortFName(selectedSize); // Функция для FName
+                                                                        } else if (selectedOption == "SName") {
+                                                                            testQuickSortSName(selectedSize); // Функция для SName
+                                                                        } else if (selectedOption == "Year") {
+                                                                            testQuickSortYear(selectedSize); // Функция для Year
+                                                                        }
                                                                         getch();
                                                                     }
                                                                     break;
@@ -817,6 +829,7 @@ int main() {
                                                     genFileChoice = (genFileChoice < genFileMenu.size() - 1) ? genFileChoice + 1 : 0;
                                                     break;
                                                 case 10: // Enter
+                                                    std::string selectedOption = genFileMenu[genFileChoice];
                                                     if (genFileChoice == genFileMenu.size() - 1) {
                                                         goto backToHeapSort;
                                                     } else {
@@ -834,7 +847,18 @@ int main() {
                                                                     if (sizeChoice == sizeMenu.size() - 1) {
                                                                         goto backToGenFileHeap;
                                                                     } else {
-                                                                        testHeapSortPages(stoi(sizeMenu[sizeChoice]));
+                                                                        int selectedSize = stoi(sizeMenu[sizeChoice]);
+                                                                        if (selectedOption == "Title") {
+                                                                            testHeapSortTitle(selectedSize); // Функция для Title
+                                                                        } else if (selectedOption == "Pages") {
+                                                                            testHeapSortPages(selectedSize); // Функция для Pages
+                                                                        } else if (selectedOption == "FName") {
+                                                                            testHeapSortFName(selectedSize); // Функция для FName
+                                                                        } else if (selectedOption == "SName") {
+                                                                            testHeapSortSName(selectedSize); // Функция для SName
+                                                                        } else if (selectedOption == "Year") {
+                                                                            testHeapSortYear(selectedSize); // Функция для Year
+                                                                        }
                                                                         getch();
                                                                     }
                                                                     break;

@@ -89,14 +89,7 @@ void testQuickSortPages(int cnt)
     ArraySequence<BookCard> a;
     QuickSort<BookCard, ArraySequenceIterator<BookCard, false>> QuickSorter;
     GettingDataFromFile(filename, a);
-    std::cout << a.GetLength() << std::endl;
-    std::cout<<a[1] << std::endl;
-    clock_t start = clock();
     QuickSorter.sort(a.begin(), a.end(), ComporatorBookPages);
-    clock_t end = clock();
-    std::cout << a[1] << std::endl;
-    double seconds = (double)(end - start) / CLOCKS_PER_SEC;
-    std::cout << seconds << std::endl;
     PuttingDataToFile(filename_2, a);
 }
 
@@ -109,14 +102,7 @@ void testQuickSortFName(int cnt)
     ArraySequence<BookCard> a;
     QuickSort<BookCard, ArraySequenceIterator<BookCard, false>> QuickSorter;
     GettingDataFromFile(filename, a);
-    std::cout << a.GetLength() << std::endl;
-    std::cout<<a[1] << std::endl;
-    clock_t start = clock();
     QuickSorter.sort(a.begin(), a.end(), ComporatorBookFirstName);
-    clock_t end = clock();
-    std::cout << a[1] << std::endl;
-    double seconds = (double)(end - start) / CLOCKS_PER_SEC;
-    std::cout << seconds << std::endl;
     PuttingDataToFile(filename_2, a);
 }
 
@@ -129,14 +115,7 @@ void testQuickSortSName(int cnt)
     ArraySequence<BookCard> a;
     QuickSort<BookCard, ArraySequenceIterator<BookCard, false>> QuickSorter;
     GettingDataFromFile(filename, a);
-    std::cout << a.GetLength() << std::endl;
-    std::cout<<a[1] << std::endl;
-    clock_t start = clock();
     QuickSorter.sort(a.begin(), a.end(), ComporatorBookSecondName);
-    clock_t end = clock();
-    std::cout << a[1] << std::endl;
-    double seconds = (double)(end - start) / CLOCKS_PER_SEC;
-    std::cout << seconds << std::endl;
     PuttingDataToFile(filename_2, a);
 }
 
@@ -149,14 +128,8 @@ void testQuickSortTitle(int cnt)
     ArraySequence<BookCard> a;
     QuickSort<BookCard, ArraySequenceIterator<BookCard, false>> QuickSorter;
     GettingDataFromFile(filename, a);
-    std::cout << a.GetLength() << std::endl;
-    std::cout<<a[1] << std::endl;
-    clock_t start = clock();
+
     QuickSorter.sort(a.begin(), a.end(), ComparatorBookTitle);
-    clock_t end = clock();
-    std::cout << a[1] << std::endl;
-    double seconds = (double)(end - start) / CLOCKS_PER_SEC;
-    std::cout << seconds << std::endl;
     PuttingDataToFile(filename_2, a);
 }
 
@@ -169,14 +142,7 @@ void testQuickSortYear(int cnt)
     ArraySequence<BookCard> a;
     QuickSort<BookCard, ArraySequenceIterator<BookCard, false>> QuickSorter;
     GettingDataFromFile(filename, a);
-    std::cout << a.GetLength() << std::endl;
-    std::cout<<a[1] << std::endl;
-    clock_t start = clock();
     QuickSorter.sort(a.begin(), a.end(), ComporatorBookYear);
-    clock_t end = clock();
-    std::cout << a[1] << std::endl;
-    double seconds = (double)(end - start) / CLOCKS_PER_SEC;
-    std::cout << seconds << std::endl;
     PuttingDataToFile(filename_2, a);
 }
 
@@ -200,14 +166,9 @@ void testHeapSortPages(int cnt)
     ArraySequence<BookCard> a;
     HeapSort<BookCard, ArraySequenceIterator<BookCard, false>> HeapSorter;
     GettingDataFromFile(filename, a);
-    std::cout << a.GetLength() << std::endl;
-    std::cout<<a[1] << std::endl;
-    clock_t start = clock();
+    
     HeapSorter.sort(a.begin(), a.end(), ComporatorBookPages);
-    clock_t end = clock();
-    std::cout << a[1] << std::endl;
-    double seconds = (double)(end - start) / CLOCKS_PER_SEC;
-    std::cout << seconds << std::endl;
+    
     PuttingDataToFile(filename_2, a);
 }
 
@@ -220,14 +181,9 @@ void testHeapSortFName(int cnt)
     ArraySequence<BookCard> a;
     HeapSort<BookCard, ArraySequenceIterator<BookCard, false>> HeapSorter;
     GettingDataFromFile(filename, a);
-    std::cout << a.GetLength() << std::endl;
-    std::cout<<a[1] << std::endl;
-    clock_t start = clock();
+    
     HeapSorter.sort(a.begin(), a.end(), ComporatorBookFirstName);
-    clock_t end = clock();
-    std::cout << a[1] << std::endl;
-    double seconds = (double)(end - start) / CLOCKS_PER_SEC;
-    std::cout << seconds << std::endl;
+    
     PuttingDataToFile(filename_2, a);
 }
 
@@ -240,14 +196,9 @@ void testHeapSortSName(int cnt)
     ArraySequence<BookCard> a;
     HeapSort<BookCard, ArraySequenceIterator<BookCard, false>> HeapSorter;
     GettingDataFromFile(filename, a);
-    std::cout << a.GetLength() << std::endl;
-    std::cout<<a[1] << std::endl;
-    clock_t start = clock();
+    
     HeapSorter.sort(a.begin(), a.end(), ComporatorBookSecondName);
-    clock_t end = clock();
-    std::cout << a[1] << std::endl;
-    double seconds = (double)(end - start) / CLOCKS_PER_SEC;
-    std::cout << seconds << std::endl;
+    
     PuttingDataToFile(filename_2, a);
 }
 
@@ -260,14 +211,9 @@ void testHeapSortTitle(int cnt)
     ArraySequence<BookCard> a;
     HeapSort<BookCard, ArraySequenceIterator<BookCard, false>> HeapSorter;
     GettingDataFromFile(filename, a);
-    std::cout << a.GetLength() << std::endl;
-    std::cout<<a[1] << std::endl;
-    clock_t start = clock();
+    
     HeapSorter.sort(a.begin(), a.end(), ComparatorBookTitle);
-    clock_t end = clock();
-    std::cout << a[1] << std::endl;
-    double seconds = (double)(end - start) / CLOCKS_PER_SEC;
-    std::cout << seconds << std::endl;
+    
     PuttingDataToFile(filename_2, a);
 }
 
@@ -280,14 +226,9 @@ void testHeapSortYear(int cnt)
     ArraySequence<BookCard> a;
     HeapSort<BookCard, ArraySequenceIterator<BookCard, false>> HeapSorter;
     GettingDataFromFile(filename, a);
-    std::cout << a.GetLength() << std::endl;
-    std::cout<<a[1] << std::endl;
-    clock_t start = clock();
+    
     HeapSorter.sort(a.begin(), a.end(), ComporatorBookYear);
-    clock_t end = clock();
-    std::cout << a[1] << std::endl;
-    double seconds = (double)(end - start) / CLOCKS_PER_SEC;
-    std::cout << seconds << std::endl;
+    
     PuttingDataToFile(filename_2, a);
 }
 
@@ -322,14 +263,7 @@ void testBubbleSortFName(int cnt)
     ArraySequence<BookCard> a;
     BubbleSort<BookCard, ArraySequenceIterator<BookCard, false>> BubbleSorter;
     GettingDataFromFile(filename, a);
-    std::cout << a.GetLength() << std::endl;
-    std::cout<<a[1] << std::endl;
-    clock_t start = clock();
     BubbleSorter.sort(a.begin(), a.end(), ComporatorBookFirstName);
-    clock_t end = clock();
-    std::cout << a[1] << std::endl;
-    double seconds = (double)(end - start) / CLOCKS_PER_SEC;
-    std::cout << seconds << std::endl;
     PuttingDataToFile(filename_2, a);
 }
 
@@ -342,14 +276,7 @@ void testBubbleSortSName(int cnt)
     ArraySequence<BookCard> a;
     BubbleSort<BookCard, ArraySequenceIterator<BookCard, false>> BubbleSorter;
     GettingDataFromFile(filename, a);
-    std::cout << a.GetLength() << std::endl;
-    std::cout<<a[1] << std::endl;
-    clock_t start = clock();
     BubbleSorter.sort(a.begin(), a.end(), ComporatorBookSecondName);
-    clock_t end = clock();
-    std::cout << a[1] << std::endl;
-    double seconds = (double)(end - start) / CLOCKS_PER_SEC;
-    std::cout << seconds << std::endl;
     PuttingDataToFile(filename_2, a);
 }
 
@@ -362,14 +289,7 @@ void testBubbleSortTitle(int cnt)
     ArraySequence<BookCard> a;
     BubbleSort<BookCard, ArraySequenceIterator<BookCard, false>> BubbleSorter;
     GettingDataFromFile(filename, a);
-    std::cout << a.GetLength() << std::endl;
-    std::cout<<a[1] << std::endl;
-    clock_t start = clock();
     BubbleSorter.sort(a.begin(), a.end(), ComparatorBookTitle);
-    clock_t end = clock();
-    std::cout << a[1] << std::endl;
-    double seconds = (double)(end - start) / CLOCKS_PER_SEC;
-    std::cout << seconds << std::endl;
     PuttingDataToFile(filename_2, a);
 }
 
@@ -382,14 +302,7 @@ void testBubbleSortYear(int cnt)
     ArraySequence<BookCard> a;
     BubbleSort<BookCard, ArraySequenceIterator<BookCard, false>> BubbleSorter;
     GettingDataFromFile(filename, a);
-    std::cout << a.GetLength() << std::endl;
-    std::cout<<a[1] << std::endl;
-    clock_t start = clock();
     BubbleSorter.sort(a.begin(), a.end(), ComporatorBookYear);
-    clock_t end = clock();
-    std::cout << a[1] << std::endl;
-    double seconds = (double)(end - start) / CLOCKS_PER_SEC;
-    std::cout << seconds << std::endl;
     PuttingDataToFile(filename_2, a);
 }
 
