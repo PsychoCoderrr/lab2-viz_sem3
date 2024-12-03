@@ -13,7 +13,8 @@
 #include "BookCardComporator.h"
 #include "HeapSort.h"
 #include "BubbleSort.h"
-
+#include "FuncForBD.h"
+#include "DefaultComporator.h"
 void TestComplexSum()
 {
     complex test1(2, 4);
@@ -81,8 +82,8 @@ void TestArraySequence()
 
 void testQuickSortPages(int cnt)
 {
-    std::string filename = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/laboratory2/laboratory2/otput.csv";
-    std::string filename_2 = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/laboratory2/laboratory2/input.csv";
+    std::string filename = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/learnsdl2_2/learnsdl2_2/otput.csv";
+    std::string filename_2 = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/learnsdl2_2/learnsdl2_2/input.csv";
 
     Generator(filename, cnt);
     ArraySequence<BookCard> a;
@@ -101,8 +102,8 @@ void testQuickSortPages(int cnt)
 
 void testQuickSortFName(int cnt)
 {
-    std::string filename = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/laboratory2/laboratory2/otput.csv";
-    std::string filename_2 = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/laboratory2/laboratory2/input.csv";
+    std::string filename = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/learnsdl2_2/learnsdl2_2/otput.csv";
+    std::string filename_2 = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/learnsdl2_2/learnsdl2_2/input.csv";
 
     Generator(filename, cnt);
     ArraySequence<BookCard> a;
@@ -121,8 +122,8 @@ void testQuickSortFName(int cnt)
 
 void testQuickSortSName(int cnt)
 {
-    std::string filename = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/laboratory2/laboratory2/otput.csv";
-    std::string filename_2 = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/laboratory2/laboratory2/input.csv";
+    std::string filename = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/learnsdl2_2/learnsdl2_2/otput.csv";
+    std::string filename_2 = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/learnsdl2_2/learnsdl2_2/input.csv";
 
     Generator(filename, cnt);
     ArraySequence<BookCard> a;
@@ -141,8 +142,8 @@ void testQuickSortSName(int cnt)
 
 void testQuickSortTitle(int cnt)
 {
-    std::string filename = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/laboratory2/laboratory2/otput.csv";
-    std::string filename_2 = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/laboratory2/laboratory2/input.csv";
+    std::string filename = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/learnsdl2_2/learnsdl2_2/otput.csv";
+    std::string filename_2 = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/learnsdl2_2/learnsdl2_2/input.csv";
 
     Generator(filename, cnt);
     ArraySequence<BookCard> a;
@@ -161,8 +162,8 @@ void testQuickSortTitle(int cnt)
 
 void testQuickSortYear(int cnt)
 {
-    std::string filename = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/laboratory2/laboratory2/otput.csv";
-    std::string filename_2 = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/laboratory2/laboratory2/input.csv";
+    std::string filename = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/learnsdl2_2/learnsdl2_2/otput.csv";
+    std::string filename_2 = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/learnsdl2_2/learnsdl2_2/input.csv";
 
     Generator(filename, cnt);
     ArraySequence<BookCard> a;
@@ -192,8 +193,8 @@ void testQuickSortYear(int cnt)
 
 void testHeapSortPages(int cnt)
 {
-    std::string filename = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/laboratory2/laboratory2/otput.csv";
-    std::string filename_2 = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/laboratory2/laboratory2/input.csv";
+    std::string filename = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/learnsdl2_2/learnsdl2_2/otput.csv";
+    std::string filename_2 = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/learnsdl2_2/learnsdl2_2/input.csv";
 
     Generator(filename, cnt);
     ArraySequence<BookCard> a;
@@ -212,8 +213,8 @@ void testHeapSortPages(int cnt)
 
 void testHeapSortFName(int cnt)
 {
-    std::string filename = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/laboratory2/laboratory2/otput.csv";
-    std::string filename_2 = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/laboratory2/laboratory2/input.csv";
+    std::string filename = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/learnsdl2_2/learnsdl2_2/otput.csv";
+    std::string filename_2 = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/learnsdl2_2/learnsdl2_2/input.csv";
 
     Generator(filename, cnt);
     ArraySequence<BookCard> a;
@@ -232,8 +233,8 @@ void testHeapSortFName(int cnt)
 
 void testHeapSortSName(int cnt)
 {
-    std::string filename = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/laboratory2/laboratory2/otput.csv";
-    std::string filename_2 = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/laboratory2/laboratory2/input.csv";
+    std::string filename = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/learnsdl2_2/learnsdl2_2/otput.csv";
+    std::string filename_2 = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/learnsdl2_2/learnsdl2_2/input.csv";
 
     Generator(filename, cnt);
     ArraySequence<BookCard> a;
@@ -252,8 +253,8 @@ void testHeapSortSName(int cnt)
 
 void testHeapSortTitle(int cnt)
 {
-    std::string filename = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/laboratory2/laboratory2/otput.csv";
-    std::string filename_2 = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/laboratory2/laboratory2/input.csv";
+    std::string filename = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/learnsdl2_2/learnsdl2_2/otput.csv";
+    std::string filename_2 = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/learnsdl2_2/learnsdl2_2/input.csv";
 
     Generator(filename, cnt);
     ArraySequence<BookCard> a;
@@ -272,8 +273,8 @@ void testHeapSortTitle(int cnt)
 
 void testHeapSortYear(int cnt)
 {
-    std::string filename = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/laboratory2/laboratory2/otput.csv";
-    std::string filename_2 = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/laboratory2/laboratory2/input.csv";
+    std::string filename = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/learnsdl2_2/learnsdl2_2/otput.csv";
+    std::string filename_2 = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/learnsdl2_2/learnsdl2_2/input.csv";
 
     Generator(filename, cnt);
     ArraySequence<BookCard> a;
@@ -301,28 +302,21 @@ void testHeapSortYear(int cnt)
 
 void testBubbleSortPages(int cnt)
 {
-    std::string filename = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/laboratory2/laboratory2/otput.csv";
-    std::string filename_2 = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/laboratory2/laboratory2/input.csv";
+    std::string filename = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/learnsdl2_2/learnsdl2_2/otput.csv";
+    std::string filename_2 = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/learnsdl2_2/learnsdl2_2/input.csv";
 
     Generator(filename, cnt);
     ArraySequence<BookCard> a;
     BubbleSort<BookCard, ArraySequenceIterator<BookCard, false>> BubbleSorter;
     GettingDataFromFile(filename, a);
-    std::cout << a.GetLength() << std::endl;
-    std::cout<<a[1] << std::endl;
-    clock_t start = clock();
     BubbleSorter.sort(a.begin(), a.end(), ComporatorBookPages);
-    clock_t end = clock();
-    std::cout << a[1] << std::endl;
-    double seconds = (double)(end - start) / CLOCKS_PER_SEC;
-    std::cout << seconds << std::endl;
     PuttingDataToFile(filename_2, a);
 }
 
 void testBubbleSortFName(int cnt)
 {
-    std::string filename = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/laboratory2/laboratory2/otput.csv";
-    std::string filename_2 = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/laboratory2/laboratory2/input.csv";
+    std::string filename = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/learnsdl2_2/learnsdl2_2/otput.csv";
+    std::string filename_2 = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/learnsdl2_2/learnsdl2_2/input.csv";
 
     Generator(filename, cnt);
     ArraySequence<BookCard> a;
@@ -341,8 +335,8 @@ void testBubbleSortFName(int cnt)
 
 void testBubbleSortSName(int cnt)
 {
-    std::string filename = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/laboratory2/laboratory2/otput.csv";
-    std::string filename_2 = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/laboratory2/laboratory2/input.csv";
+    std::string filename = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/learnsdl2_2/learnsdl2_2/otput.csv";
+    std::string filename_2 = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/learnsdl2_2/learnsdl2_2/input.csv";
 
     Generator(filename, cnt);
     ArraySequence<BookCard> a;
@@ -361,8 +355,8 @@ void testBubbleSortSName(int cnt)
 
 void testBubbleSortTitle(int cnt)
 {
-    std::string filename = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/laboratory2/laboratory2/otput.csv";
-    std::string filename_2 = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/laboratory2/laboratory2/input.csv";
+    std::string filename = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/learnsdl2_2/learnsdl2_2/otput.csv";
+    std::string filename_2 = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/learnsdl2_2/learnsdl2_2/input.csv";
 
     Generator(filename, cnt);
     ArraySequence<BookCard> a;
@@ -381,8 +375,8 @@ void testBubbleSortTitle(int cnt)
 
 void testBubbleSortYear(int cnt)
 {
-    std::string filename = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/laboratory2/laboratory2/otput.csv";
-    std::string filename_2 = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/laboratory2/laboratory2/input.csv";
+    std::string filename = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/learnsdl2_2/learnsdl2_2/otput.csv";
+    std::string filename_2 = "/Users/vitalijkoldasev/Desktop/laboratories_3_sem/learnsdl2_2/learnsdl2_2/input.csv";
 
     Generator(filename, cnt);
     ArraySequence<BookCard> a;
@@ -415,4 +409,62 @@ void heapsortviztest()
 {
     HeapSort<int, std::vector<int>::iterator> sorter;
     sorter.sort_viz();
+}
+
+
+void statBubbleSort(int size)
+{
+    ArraySequence<int> seq;
+    int start_sequence = -10000;
+    int end_sequence = 10000;
+    int a;
+    for (int i = 0; i < size; i++)
+    {
+        a = rand() % (end_sequence - start_sequence + 1) + start_sequence;
+        seq.Append(a);
+    }
+    BubbleSort<int, ArraySequenceIterator<int, false>> BubbleSorter;
+    clock_t start = clock();
+    BubbleSorter.sort(seq.begin(), seq.end(), DefaultComparator);
+    clock_t end = clock();
+    double seconds = (double)(end - start) / CLOCKS_PER_SEC;
+    addToBD(1, size, seconds);
+}
+
+void statQuickSort(int size)
+{
+    ArraySequence<int> seq;
+    int start_sequence = -10000;
+    int end_sequence = 10000;
+    int a;
+    for (int i = 0; i < size; i++)
+    {
+        a = rand() % (end_sequence - start_sequence + 1) + start_sequence;
+        seq.Append(a);
+    }
+    QuickSort<int, ArraySequenceIterator<int, false>> QuickSorter;
+    clock_t start = clock();
+    QuickSorter.sort(seq.begin(), seq.end(), DefaultComparator);
+    clock_t end = clock();
+    double seconds = (double)(end - start) / CLOCKS_PER_SEC;
+    addToBD(2, size, seconds);
+}
+
+void statHeapSort(int size)
+{
+    ArraySequence<int> seq;
+    int start_sequence = -10000;
+    int end_sequence = 10000;
+    int a;
+    for (int i = 0; i < size; i++)
+    {
+        a = rand() % (end_sequence - start_sequence + 1) + start_sequence;
+        seq.Append(a);
+    }
+    HeapSort<int, ArraySequenceIterator<int, false>> HeapSorter;
+    clock_t start = clock();
+    HeapSorter.sort(seq.begin(), seq.end(), DefaultComparator);
+    clock_t end = clock();
+    double seconds = (double)(end - start) / CLOCKS_PER_SEC;
+    addToBD(3, size, seconds);
 }

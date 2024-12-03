@@ -32,6 +32,7 @@ set(SOURCE_FILES
     QuickSort.h
     Sequence.h
     tests.h
+    FuncForBD.h
     # Добавьте остальные файлы здесь
 )
 
